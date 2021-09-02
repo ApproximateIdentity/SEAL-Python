@@ -1,0 +1,5 @@
+PYTHONPATH=/python-seal
+JUPYTER_RUNTIME_DIR=/runtime
+JUPYTER_DATA_DIR=/runtime
+JUPYTER_CONFIG_DIR=/runtime
+MPLCONFIGDIR=/runtime

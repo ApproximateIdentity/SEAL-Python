@@ -33,4 +33,7 @@ RUN cd ${SRC}/SEAL && \
     cd ${SRC} && \
     python3 setup.py build_ext -i
 
-CMD ["/usr/bin/python3"]
+RUN pip3 install jupyter pandas scipy numpy matplotlib
+RUN mkdir /runtime && chmod 777 /runtime
+RUN mkdir /notebooks && chmod 777 /notebooks
+CMD ["jupyter-notebook", "--ip=0.0.0.0", "--notebook-dir=/notebooks"]
