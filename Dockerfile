@@ -1,4 +1,4 @@
-FROM ubuntu:21.04
+FROM ubuntu:latest
 
 # define the folder where our src should exist/ be deposited
 ARG SRC=/python-seal
